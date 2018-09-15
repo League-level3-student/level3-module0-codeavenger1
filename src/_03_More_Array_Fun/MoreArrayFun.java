@@ -85,20 +85,17 @@ public class MoreArrayFun {
 		
 		int prints = 0;
 		
-		while (prints<5) {
+		while (prints < random.length) {
 		int num = rand.nextInt(random.length);
-		System.out.println(num);
-		checked[num] = false;
+	//	checked[num] = false;
 		if (!checked[num]) {
 			checked[num] = true;
-			prints++;
+			prints++;	
+			System.out.println(random[num]);
 		}
-		System.out.println(random[num]);
+	
 			
 		}
-		
-		
-			//System.out.println(random[rand.nextInt(random.length)]);
 		}
 
 	}
